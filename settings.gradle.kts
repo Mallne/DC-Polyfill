@@ -1,4 +1,4 @@
-rootProject.name = "Polyfill"
+rootProject.name = "polyfill"
 
 pluginManagement {
     repositories {
@@ -14,7 +14,3 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
-include(":library")
-
-
