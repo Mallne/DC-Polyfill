@@ -6,10 +6,10 @@ android-compileSdk = "36"
 # @keep
 android-minSdk = "24"
 ben-manes-versions-v = "0.53.0"
-dependency-analysis-v = "3.5.1"
-kotlin = "2.3.0"
-maven-publish = "0.35.0"
-version-catalog-update-v = "1.0.1"
+dependency-analysis-v = "3.6.1"
+kotlin = "2.3.20"
+maven-publish = "0.36.0"
+version-catalog-update-v = "1.1.0"
 
 [libraries]
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
