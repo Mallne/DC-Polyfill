@@ -13,6 +13,7 @@ object Validation {
 
         fun oneOrNone(vararg properties: Any?) = atMost(1, *properties)
         fun none(vararg properties: Any?) = exactly(0, *properties)
+        fun all(vararg properties: Any?) = exactly(properties.size, *properties)
         fun one(vararg properties: Any?) = exactly(1, *properties)
     }
 
@@ -31,6 +32,8 @@ object Validation {
 
         fun none(vararg properties: Boolean, toBe: Boolean = true) = exactly(0, toBe = toBe, properties = properties)
         fun one(vararg properties: Boolean, toBe: Boolean = true) = exactly(1, toBe = toBe, properties = properties)
+        fun all(vararg properties: Boolean, toBe: Boolean = true) =
+            exactly(properties.size, toBe = toBe, properties = properties)
     }
 
 }
