@@ -67,3 +67,14 @@ Ensure that core logic remains in `commonMain` to maintain portability across al
 
 ### Dependencies
 Dependencies are managed via the Version Catalog in `gradle/libs.versions.toml`. Use the `libs` alias when adding new dependencies to `build.gradle.kts`.
+
+---
+
+## Published Documentation (Notary)
+
+The Polyfill documentation is published in the DiCentra collection with the following hierarchy:
+
+- [Polyfill](https://docs.mallne.cloud/doc/polyfill-uC5ggFQ9CY) 🧩 — Hub/overview
+  - [Contracts & Assertions](https://docs.mallne.cloud/doc/contracts-assertions-n7gbMhfSeD) ⚖️ — ensure/probe functions with compiler contracts
+  - [Validation DSL](https://docs.mallne.cloud/doc/validation-dsl-D7TcfiCEE1) ✅ — Null/Bool count checkers + JVM reflection extensions
+  - [Extensions & Annotations](https://docs.mallne.cloud/doc/extensions-annotations-BbZLugE01l) 🔧 — Boolean.invoke operator, @InternalProxyObject
