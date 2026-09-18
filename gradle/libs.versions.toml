@@ -1,12 +1,12 @@
 [versions]
 # @pin
-agp = "9.1.1"
+agp = "9.4.0"
 # @keep
 android-compileSdk = "36"
 # @keep
 android-minSdk = "24"
-ben-manes-versions-v = "0.61.0"
-dependency-analysis-v = "3.19.1"
+ben-manes-versions-v = "0.64.0"
+dependency-analysis-v = "3.19.2"
 kotlin = "2.4.20"
 maven-publish = "0.37.0"
 version-catalog-update-v = "1.1.1"
