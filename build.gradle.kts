@@ -66,11 +66,19 @@ kotlin {
     jvmToolchain(25)
 }
 
-val dcUsername = project.findProperty("dc.username") as? String
-val dcPassword = project.findProperty("dc.password") as? String
-
 mavenPublishing {
     publishing {
+        repositories {
+            maven {
+                name = "DiCentraArtefacts"
+                url = uri("https://registry.mallne.cloud/repository/DiCentraArtefacts/")
+                credentials {
+                    username = project.findProperty("dc.username") as? String ?: ""
+                    password = project.findProperty("dc.password") as? String ?: ""
+                }
+            }
+        }
+
         publications {
             create<MavenPublication>("maven") {
                 groupId = project.group.toString()
@@ -84,17 +92,6 @@ mavenPublishing {
                         developer {
                             name = "Mallne"
                             url = "mallne.cloud"
-                        }
-                    }
-                }
-                if (dcUsername != null && dcPassword != null) {
-                    repositories {
-                        maven {
-                            url = uri("https://registry.mallne.cloud/repository/DiCentraArtefacts/")
-                            credentials {
-                                username = dcUsername
-                                password = dcPassword
-                            }
                         }
                     }
                 }
