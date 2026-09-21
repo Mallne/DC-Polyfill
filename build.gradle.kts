@@ -78,26 +78,17 @@ mavenPublishing {
                 }
             }
         }
-
-        publications {
-            create<MavenPublication>("maven") {
-                groupId = project.group.toString()
-                artifactId = project.name
-                version = project.version.toString()
-
-                pom {
-                    name = "Dicentra Polyfill"
-                    inceptionYear = "2025"
-                    developers {
-                        developer {
-                            name = "Mallne"
-                            url = "mallne.cloud"
-                        }
-                    }
-                }
-            }
-        }
     }
 
     coordinates(group.toString(), project.name)
+    pom {
+        name = "Dicentra Polyfill"
+        inceptionYear = "2025"
+        developers {
+            developer {
+                name = "Mallne"
+                url = "mallne.cloud"
+            }
+        }
+    }
 }
