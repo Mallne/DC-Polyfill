@@ -9,7 +9,7 @@ ben-manes-versions-v = "0.66.0"
 dependency-analysis-v = "3.19.2"
 kotlin = "2.4.21"
 maven-publish = "0.37.0"
-version-catalog-update-v = "1.1.1"
+version-catalog-update-v = "1.1.2"
 
 [libraries]
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
